@@ -88,9 +88,7 @@ header h1 {
     font-size: 40px;
 }
 
-header h1,
-h2,
-h3 {
+header h1 {
     color: white;
 }
 
@@ -219,4 +217,146 @@ li.dropdown {
 .link img:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.products-header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.products-header a {
+    font-size: 20px;
+    padding: 20px;
+    color: #eb4b2b;
+    border-bottom: 5px solid #eb4b2b;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.product-item img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product-item:hover {
+    border: 1px solid #eb4b2b;
+}
+
+.product-container {
+    padding: 10px;
+}
+
+.product-title {
+    color: black;
+    font-weight: normal;
+}
+
+.product-price {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-price h3 {
+    color: #eb4b2b;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+  :root {
+    --primary: #08aeea;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-family: var(--font);
+    font-size: 1.4rem;
+    overflow-x: hidden;
+    font-weight: 300;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font-family: var(--font);
+    font-size: 1.4rem;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+  
+.line-text {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.line-text:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.line-text span {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    padding: 1rem;
+    font-weight: 600;
+    width: 100%;
 }
