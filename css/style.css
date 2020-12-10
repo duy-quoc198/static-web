@@ -180,6 +180,11 @@ li.dropdown {
 .main-banner img {
     width: 100%;
     border-radius: 10px;
+    transition: .2s;
+}
+
+.main-banner img:hover {
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .secound-banner {
@@ -189,6 +194,10 @@ li.dropdown {
 .secound-banner img {
     height: 100%;
     border-radius: 10px;
+}
+
+.secound-banner img:hover {
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .links-button {
@@ -240,21 +249,35 @@ li.dropdown {
     padding-top: 0;
     padding-right: 8px;
     padding-left: 8px;
+    margin: 0 auto;
+    margin-right: -15px;
 }
 
 .product-item {
     display: flex;
     flex-direction: column;
-    width: 250px;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     border-radius: 5px;
+    flex: 0 18%;
+    transition: 0.2s;
 }
 
 .product-item img {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    width: 100%;
+    max-height: 100%;
+}
+
+.product-img {
+    height: 78%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    background-color: white;
 }
 
 .product-item:hover {
@@ -321,7 +344,6 @@ li.dropdown {
   button,
   textarea,
   select {
-    font-family: var(--font);
     font-size: 1.4rem;
     font-weight: 300;
     outline: none;
@@ -359,4 +381,38 @@ li.dropdown {
     padding: 1rem;
     font-weight: 600;
     width: 100%;
+}
+
+.more-button {
+    width: 100%;
+    text-align: center;
+}
+
+.more-button button {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.more-button button:hover {
+    border: 1px solid #eb4b2b;
+    color: #eb4b2b;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.subject-name {
+    text-align: center;
+}
+
+footer img {
+    border-radius: 50%;
+    max-height: 75px;
 }
